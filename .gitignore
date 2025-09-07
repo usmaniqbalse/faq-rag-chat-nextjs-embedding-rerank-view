@@ -1,0 +1,99 @@
+# ─────────────────────────────────────────────────────────────
+# Root-level .gitignore for: Next.js (frontend) + FastAPI (backend)
+# ─────────────────────────────────────────────────────────────
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# General caches & temp
+**/.cache/
+.cache/
+tmp/
+temp/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─────────────────────────────────────────────────────────────
+# Environment files (keep examples tracked)
+# ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+frontend/.env.local
+frontend/.env.*
+!frontend/.env.local.example
+
+# ─────────────────────────────────────────────────────────────
+# Frontend (Next.js / Node)
+# ─────────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+frontend/.turbo/
+frontend/.swc/
+
+# ─────────────────────────────────────────────────────────────
+# Backend (Python / FastAPI)
+# ─────────────────────────────────────────────────────────────
+# Virtual environments
+.venv/
+venv/
+env/
+backend/.venv/
+backend/venv/
+backend/env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+backend/__pycache__/
+*.py[cod]
+*$.py.class
+
+# Packaging / build
+backend/build/
+backend/dist/
+backend/*.egg-info/
+
+# Test & tooling caches
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.tox/
+backend/coverage.xml
+backend/.coverage
+backend/htmlcov/
+
+# Local data stores (Chroma vector DB, etc.)
+backend/demo-rag-chroma/
+# If you want the folder present but empty, add a .gitkeep and uncomment:
+# !backend/demo-rag-chroma/.gitkeep
+
+# Optional: Hugging Face local cache if placed under repo (usually in HOME)
+backend/.huggingface/
+backend/hf_cache/
+
+# Streamlit secrets (if you ever run Streamlit utilities)
+.streamlit/secrets.toml
+.streamlit/*.toml
+
+# Misc
+pip-wheel-metadata/
