@@ -33,7 +33,7 @@ Upload PDFs → embed with **Ollama** (`nomic-embed-text`) → store in **Chroma
 
 ```
 
-rag-chat/
+root/
 ├── backend/
 │   ├── app/
 │   │   ├── **init**.py
