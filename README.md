@@ -40,7 +40,7 @@ root/
 │   │   ├── config.py                 # env/settings (LOG_LEVEL, LOG_JSON supported)
 │   │   ├── deps.py                   # API-key dependency
 │   │   ├── exceptions.py             # global error handlers (consistent JSON envelope)
-│   │   ├── logging_config.py         # structured logging + request\_id
+│   │   ├── logging_config.py         # structured logging + request_id
 │   │   ├── models.py                 # pydantic DTOs
 │   │   ├── routers/
 │   │   │   ├── ask.py                # POST /v1/ask (returns answer + retrieved + reranked_ids + retrieval)
