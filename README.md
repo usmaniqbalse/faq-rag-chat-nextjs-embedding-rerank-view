@@ -278,7 +278,7 @@ Frontend now at: **[http://localhost:3000](http://localhost:3000)**
 4. **Answer**
 
    - **Ollama** runs `llama3.2:3b` with a strict system prompt → answer **only** from context.
-   - UI displays answer + the two Streamlit-like panels.
+   - UI displays answer + the two JSON tree panels.
 
 ---
 
@@ -355,7 +355,6 @@ uvicorn main:app --reload --port 8000
 # frontend
 cd ../frontend
 npm install
-npm i react-json-view-lite
 echo 'NEXT_PUBLIC_APP_ORIGIN=http://localhost:3000
 BACKEND_URL=http://localhost:8000
 BACKEND_API_KEY=change-me' > .env.local
