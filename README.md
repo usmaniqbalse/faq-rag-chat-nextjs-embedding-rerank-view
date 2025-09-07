@@ -53,7 +53,7 @@ root/
 │   ├── main.py                       # FastAPI app + CORS + middleware + handlers
 │   ├── requirements.txt
 │   └── .env.example
-└── frontend/
+└─ frontend/
 ├── app/
 │   ├── api/
 │   │   ├── ask/route.ts          # proxies to backend /v1/ask (adds x-api-key)
