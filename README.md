@@ -186,8 +186,6 @@ Backend now at: **[http://localhost:8000](http://localhost:8000)**
 ```bash
 cd ../frontend
 npm install
-# Install the JSON viewer used for the Streamlit-like panels
-npm i react-json-view-lite
 ```
 
 Create `.env.local`:
