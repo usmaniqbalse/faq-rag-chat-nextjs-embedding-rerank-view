@@ -1,6 +1,6 @@
 # FAQs RAG Chatbot Embedding Rerank View (Node.js + Next.js 14 + Python + FastAPI + Ollama + ChromaDB)
 
-ChatGPT-style local chat UI (**Next.js 14 App Router**) backed by a secure **FastAPI** service.  
+FAQs local chat UI (**Next.js 14 App Router**) backed by a secure **FastAPI** service.  
 Upload PDFs → embed with **Ollama** (`nomic-embed-text`) → store in **ChromaDB** → **CrossEncoder** re-rank → answer via **`llama3.2:3b`** strictly from retrieved context.
 
 > **Offline note:** First run needs internet to cache the CrossEncoder. After that, everything runs fully offline (models + cache are local).
