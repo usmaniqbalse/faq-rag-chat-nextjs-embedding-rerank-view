@@ -36,20 +36,20 @@ Upload PDFs → embed with **Ollama** (`nomic-embed-text`) → store in **Chroma
 root/
 ├── backend/
 │   ├── app/
-│   │   ├── **init**.py
-│   │   ├── config.py                 # env/settings (LOG\_LEVEL, LOG\_JSON supported)
+│   │   ├── init.py
+│   │   ├── config.py                 # env/settings (LOG_LEVEL, LOG_JSON supported)
 │   │   ├── deps.py                   # API-key dependency
 │   │   ├── exceptions.py             # global error handlers (consistent JSON envelope)
-│   │   ├── logging\_config.py         # structured logging + request\_id
+│   │   ├── logging_config.py         # structured logging + request\_id
 │   │   ├── models.py                 # pydantic DTOs
 │   │   ├── routers/
-│   │   │   ├── ask.py                # POST /v1/ask (returns answer + retrieved + reranked\_ids + retrieval)
+│   │   │   ├── ask.py                # POST /v1/ask (returns answer + retrieved + reranked_ids + retrieval)
 │   │   │   └── ingest.py             # POST /v1/ingest (PDF upload)
 │   │   └── services/
-│   │       ├── document\_processing.py# PDF -> chunks
+│   │       ├── document_processing.py# PDF -> chunks
 │   │       ├── llm.py                # call Ollama chat
 │   │       ├── rerank.py             # CrossEncoder top-3
-│   │       └── vector\_store.py       # Chroma get/upsert/query
+│   │       └── vector_store.py       # Chroma get/upsert/query
 │   ├── main.py                       # FastAPI app + CORS + middleware + handlers
 │   ├── requirements.txt
 │   └── .env.example
